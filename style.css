@@ -91,22 +91,30 @@ html,body{
   height:100vh;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color:#f4f4f4;
 }
 /* resposiveness */
-@media(max-width:600px){
+@media(max-width:900px){
   #main-nav ul li {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
     
-    display: block;
+  
    
   }
 #main-nav ul li:hover{
   width: 100%;
   position:relative;
+  flex-direction: column;
+  justify-content: space-around;
+
 
 }
 .showcase h1{
-font-size: 2.3rem;
+flex:none;
+text-align: center;
+font-size: 1.8rem;
 }
 }
